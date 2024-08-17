@@ -1,9 +1,7 @@
 {
-  "better-comments.highlightPlainText": true,
+  "better-comments.highlightPlainText": false,
   "better-comments.multilineComments": true,
   "better-comments.tags": [
-
-    
     {
       "tag": "!",
       "color": "#FF2D00",
