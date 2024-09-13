@@ -13,12 +13,15 @@ const d1 = new Data();
 const d2 = new Data(24, 12, 2022);
 const d3 = new Data(31, 12, 2021);
 
-console.log(d1);
-console.log(d2);
-console.log(d3);
+console.log(d1); // ! o objeto tem a mesma quantidade de atributos e métodos que a função construtora
+// console.log(d2);
+// console.log(d3);
 
-console.log(d2.exibir())
-console.log(d3.exibir())
+// console.log(d2.exibir())
+// console.log(d3.exibir())
+
+console.log(typeof d1);
+console.log(typeof Data);
 
 // ! funçao de construtor pode ser convertida em uma declaração de classe
 /**
