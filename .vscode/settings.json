@@ -1,5 +1,5 @@
 {
-  "better-comments.highlightPlainText": false,
+  "better-comments.highlightPlainText": true,
   "better-comments.multilineComments": true,
   "better-comments.tags": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "tag": "*",
-      "color": "#98C379",
+      "color": "#DDA0DD",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
