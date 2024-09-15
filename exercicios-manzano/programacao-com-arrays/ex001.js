@@ -6,7 +6,7 @@ const prompt = require("prompt-sync")();
 const nomes = [];
 
 for (let i = 0; i < 10; i++) {
-  let nome = prompt(`Informe o ${i + 1}º nome: `);
+  const nome = prompt(`Informe o ${i + 1}º nome: `);
   nomes.push(nome);
 }
 
