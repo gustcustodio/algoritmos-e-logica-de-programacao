@@ -13,34 +13,29 @@ const tamanho = 3; // * Altere para 6 quando quiser testar com mais elementos
 
 // * matriz A
 for (let i = 0; i < tamanho; i++) {
-  const numero = Number(
-    prompt(`Informe o ${i + 1}º número da matriz A (o número deve ser par): `)
-  );
-  if (numero % 2 === 0) {
-    A.push(numero);
-  } else {
-    break;
-  }
+  let numero;
+  do {
+    numero = Number(
+      prompt(`Informe o ${i + 1}º número da matriz A (o número deve ser par): `)
+    );
+  } while (numero % 2 !== 0);
+  A.push(numero);
 }
 
 // * matriz B
 for (let i = 0; i < tamanho; i++) {
-  const numero = Number(
-    prompt(`Informe o ${i + 1}º número da matriz B (o número deve ser ímpar): `)
-  );
-  if (numero % 2 !== 0) {
-    B.push(numero);
-  } else {
-    break;
-  }
+  let numero;
+  do {
+    numero = Number(
+      prompt(
+        `Informe o ${i + 1}º número da matriz B (o número deve ser ímpar): `
+      )
+    );
+  } while (numero % 2 === 0);
+  B.push(numero);
 }
 
 // * matriz C - primeiro recebendo a matriz A, depois a matriz B.
-for (let i = 0; i < A.length; i++) {
-  C.push(A[i]);
-}
-for (let i = 0; i < B.length; i++) {
-  C.push(B[i]);
-}
+C.push(...A, ...B);
 
 console.log(C);
