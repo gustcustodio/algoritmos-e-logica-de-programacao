@@ -26,13 +26,13 @@ for (const numero of A) {
 console.log("Matriz B:", B);
 
 for (let i = 0; i < TAMANHO; i++) {
-  let menorIndice = i;
+  let maiorIndice = i;
   for (let j = i + 1; j < TAMANHO; j++) {
-    if (B[j] > B[menorIndice]) {
-      menorIndice = j;
+    if (B[j] > B[maiorIndice]) {
+      maiorIndice = j;
     }
   }
-  [B[i], B[menorIndice]] = [B[menorIndice], B[i]];
+  [B[i], B[maiorIndice]] = [B[maiorIndice], B[i]];
 }
 
 console.log("Matriz B em ordem decrescente:", B);

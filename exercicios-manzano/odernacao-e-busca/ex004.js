@@ -23,13 +23,13 @@ function ordenarCrescente(array) {
 
 function ordenarDecrescente(array) {
   for (let i = 0; i < array.length - 1; i++) {
-    let menorIndice = i;
+    let maiorIndice = i;
     for (let j = i + 1; j < array.length; j++) {
-      if (array[menorIndice] < array[j]) {
-        menorIndice = j;
+      if (array[maiorIndice] < array[j]) {
+        maiorIndice = j;
       }
     }
-    [array[i], array[menorIndice]] = [array[menorIndice], array[i]];
+    [array[i], array[maiorIndice]] = [array[maiorIndice], array[i]];
   }
 }
 
