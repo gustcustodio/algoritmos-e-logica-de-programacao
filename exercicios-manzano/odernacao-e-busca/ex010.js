@@ -14,12 +14,11 @@ for (let i = 0; i < TAMANHO; i++) {
   A.push(Number(prompt(`Informe o ${i + 1}º número da matriz A: `)));
 }
 
-console.log("Matriz A:", A);
-
 for (let i = 0; i < TAMANHO; i++) {
   B.push(Number(prompt(`Informe o ${i + 1}º número da matriz B: `)));
 }
 
+console.log("Matriz A:", A);
 console.log("Matriz B:", B);
 
 for (const numero of A) {
