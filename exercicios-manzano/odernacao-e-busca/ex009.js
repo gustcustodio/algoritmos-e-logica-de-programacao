@@ -15,7 +15,7 @@ for (const elemento of A) {
   B.push(Math.floor(elemento / 2));
 }
 
-for (let i = 0; i < TAMANHO; i++) {
+for (let i = 0; i < TAMANHO - 1; i++) {
   let maiorIndice = i;
   for (let j = i + 1; j < TAMANHO; j++) {
     if (A[j] > A[maiorIndice]) {
@@ -27,7 +27,7 @@ for (let i = 0; i < TAMANHO; i++) {
 
 console.log("Matriz A em ordem decrescente:", A);
 
-for (let i = 0; i < TAMANHO; i++) {
+for (let i = 0; i < TAMANHO - 1; i++) {
   let menorIndice = i;
   for (let j = i + 1; j < TAMANHO; j++) {
     if (B[j] < B[menorIndice]) {

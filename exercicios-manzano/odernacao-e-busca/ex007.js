@@ -37,8 +37,8 @@ for (const numero of A) {
   B.push(numero + 2);
 }
 
-// * ordenação da matriz B em oderm crescente * //
-for (let i = 0; i < TAMANHO; i++) {
+// * ordenação da matriz B em ordem crescente * //
+for (let i = 0; i < TAMANHO - 1; i++) {
   let menorIndice = i;
   for (let j = i + 1; j < TAMANHO; j++) {
     if (B[j] < B[menorIndice]) {

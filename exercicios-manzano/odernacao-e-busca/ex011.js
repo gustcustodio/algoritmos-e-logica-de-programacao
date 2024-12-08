@@ -41,7 +41,7 @@ console.log(
   C
 );
 
-for (let i = 0; i < TAMANHO; i++) {
+for (let i = 0; i < TAMANHO - 1; i++) {
   let maiorIndice = i;
   for (let j = i + 1; j < TAMANHO; j++) {
     if (C[j] > C[maiorIndice]) {
